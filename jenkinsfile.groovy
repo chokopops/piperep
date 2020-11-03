@@ -1,4 +1,6 @@
-
+node{
+  cd ee_tp/pom.xml
+}
 pipeline{
   agent any
     stages {
