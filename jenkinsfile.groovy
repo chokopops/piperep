@@ -3,10 +3,14 @@ node{
 }
 pipeline{
   agent any
+  tools {
+        maven 'maven'
+    }
     stages {
       stage('Compile Stage'){
         steps{
           withMaven(maven : 'maven'){
+            bat ' mvn -f ABC/pom.xml clean install'
             sh 'mvn clean compile'
           }
         }
