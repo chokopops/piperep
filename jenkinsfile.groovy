@@ -1,5 +1,5 @@
 node{
-  cd jee_tp/pom.xml
+  def pom = readMavenPom file:'pom.xml'
 }
 pipeline{
   agent any
