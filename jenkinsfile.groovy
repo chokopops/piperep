@@ -1,6 +1,3 @@
-node{
-  def pom = readMavenPom file:'jee_tp/pom.xml'
-}
 pipeline{
   agent any
   tools {
