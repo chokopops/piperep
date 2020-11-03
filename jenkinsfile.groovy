@@ -1,5 +1,5 @@
 node{
-  cd ee_tp/pom.xml
+  cd jee_tp/pom.xml
 }
 pipeline{
   agent any
