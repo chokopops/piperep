@@ -7,8 +7,8 @@ pipeline{
       stage('Compile Stage'){
         steps{
           withMaven(maven : 'maven'){
-            bat ' mvn -f ABC/pom.xml clean install'
             sh 'mvn clean compile'
+            bat ' mvn -f jee_tp/pom.xml clean install'
           }
         }
       }
