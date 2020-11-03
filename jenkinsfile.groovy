@@ -15,11 +15,7 @@ pipeline{
     }
 
     stage('Maven build') {
-        buildInfo = rtMaven.run pom: 'maven-example/pom.xml', goals: 'clean install'
-    }
-
-    stage('Publish build info') {
-        server.publishBuildInfo buildInfo
+        buildInfo = rtMaven.run pom: 'jee_tp/pom.xml', goals: 'clean install'
     }
   }
   agent any
